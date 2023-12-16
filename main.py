@@ -6,6 +6,9 @@ for i in range(1,10):
 
 print ("aaa")
 
+i= input("vvod?\n")
+print(i)
+
 
 
 
