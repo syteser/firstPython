@@ -1,7 +1,7 @@
 import pygame
 import sys
 
-game_name = "Название игры"
+game_name = "Космические защитники"
 
 def run():
     pygame.init()
