@@ -144,10 +144,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.gun" />
       <item itemvalue="Python.game" />
+      <item itemvalue="Python.gun" />
       <item itemvalue="Python.main2" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
