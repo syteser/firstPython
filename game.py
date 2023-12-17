@@ -4,6 +4,8 @@ import sys
 game_name = "Космические защитники"
 
 def run():
+    """инициализация главного окна игры
+    устанавливапем разрешение экрана, цвет фона, заголовок окна..."""
     pygame.init()
     screen = pygame.display.set_mode((1200, 800))
     pygame.display.set_caption(game_name)
