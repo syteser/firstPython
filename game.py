@@ -1,4 +1,6 @@
-import pygame, controls
+import pygame
+import controls
+
 from gun import Gun
 
 game_name = "Космические защитники"
