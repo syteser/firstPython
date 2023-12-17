@@ -1,6 +1,6 @@
 import pygame
 
-snap = 1
+snap = 5
 
 
 class Gun():
