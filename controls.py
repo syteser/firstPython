@@ -1,7 +1,6 @@
 import pygame, sys
 from bullet import Bullet
 
-
 def events(screen, gun, bullets):
     """обработка событий"""
     for event in pygame.event.get():
@@ -37,4 +36,4 @@ def update_bullets(bullets):
     for bullet in bullets.copy():
         if bullet.rect.bottom <= 0:
             bullets.remove(bullet)
-    print(len(bullets))
+#    print(len(bullets))

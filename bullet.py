@@ -1,6 +1,6 @@
 import pygame
 
-
+bullet_speed=15 #скорость пули
 class Bullet(pygame.sprite.Sprite):
 
     def __init__(self, screen, gun):
@@ -9,7 +9,7 @@ class Bullet(pygame.sprite.Sprite):
         self.screen = screen
         self.rect = pygame.Rect(0, 0, 2, 12)
         self.color = (139, 195, 74)
-        self.speed = 10 #скорость пули
+        self.speed = bullet_speed
         self.rect.centerx = gun.rect.centerx
         self.rect.top = gun.rect.top
         self.y = float(self.rect.y)

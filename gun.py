@@ -2,7 +2,6 @@ import pygame
 
 snap = 5
 
-
 class Gun():
 
     def __init__(self, screen):
