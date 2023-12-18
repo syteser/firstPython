@@ -1,17 +1,18 @@
 import pygame
 
+
 class Ino(pygame.sprite.Sprite):
     """класс одного пришельца"""
 
     def __init__(self, screen):
         super(Ino, self).__init__()
-        self.screen=screen
-        self.image=pygame.image.load('image/alienShip.png')
-        self.rect =self.image.get_rect()
-        self.rect.x=self.rect.width
-        self.rect.y=self.rect.height
-        self.x=float(self.rect.x)
-        self.y=float(self.rect.y)
+        self.screen = screen
+        self.image = pygame.image.load('image/alienShip.png')
+        self.rect = self.image.get_rect()
+        self.rect.x = self.rect.width
+        self.rect.y = self.rect.height
+        self.x = float(self.rect.x)
+        self.y = float(self.rect.y)
 
     def draw(self):
         """вывод прищельца на экрна"""
@@ -19,8 +20,5 @@ class Ino(pygame.sprite.Sprite):
 
     def update(self):
         """перемещает пришельцев"""
-        self.y+=0.1
-        self.rect.y=self.y
-
-
-
+        self.y += 0.1
+        self.rect.y = self.y
