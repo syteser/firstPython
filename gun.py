@@ -1,6 +1,6 @@
 import pygame
 
-snap = 5
+gunSpeed = 5 #скорость пушки по Х
 
 class Gun():
 
@@ -20,7 +20,7 @@ class Gun():
 
     def update_gun(self):
         if self.mright and self.rect.right < self.screen_rect.right:
-            self.center += snap
+            self.center += gunSpeed
         if self.mleft and self.rect.left > 0:
-            self.center -= snap
+            self.center -= gunSpeed
         self.rect.centerx = self.center

@@ -1,5 +1,7 @@
 import pygame
 
+#класс пули
+
 bullet_speed=15 #скорость пули
 class Bullet(pygame.sprite.Sprite):
 
