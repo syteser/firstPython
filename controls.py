@@ -1,6 +1,8 @@
 import pygame, sys
 from bullet import Bullet
 
+logVisible=False #видимость лога
+
 def events(screen, gun, bullets):
     """обработка событий"""
     for event in pygame.event.get():
@@ -19,6 +21,9 @@ def events(screen, gun, bullets):
                 gun.mright = False
             elif event.key == pygame.K_LEFT:
                 gun.mleft = False
+    #дальшще - логирование в консоль
+    if logVisible:
+        print(len(bullets))
 
 
 def update(bg_color, screen, gun, bullets):
@@ -36,4 +41,4 @@ def update_bullets(bullets):
     for bullet in bullets.copy():
         if bullet.rect.bottom <= 0:
             bullets.remove(bullet)
-#    print(len(bullets))
+
