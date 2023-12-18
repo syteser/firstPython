@@ -1,4 +1,6 @@
 import pygame
+
+import bullet
 import controls
 
 from gun import Gun

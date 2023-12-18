@@ -24,5 +24,4 @@ class Gun():
             self.center += snap
         if self.mleft and self.rect.left > 0:
             self.center -= snap
-
         self.rect.centerx = self.center
