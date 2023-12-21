@@ -24,3 +24,7 @@ class Gun():
         if self.mleft and self.rect.left > 0:
             self.center -= gunSpeed
         self.rect.centerx = self.center
+
+    def create_gun(self):
+        """размещает пушку внизу"""
+        self.center=self.screen_rect.centerx
